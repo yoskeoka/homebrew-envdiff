@@ -47,6 +47,6 @@ class Envdiff < Formula
   end
 
   test do
-    system "#{bin}/envdiff -version"
+    system bin/"envdiff", "-version"
   end
 end
