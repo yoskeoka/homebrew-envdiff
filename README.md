@@ -1,4 +1,4 @@
-# Yoskeoka Envdiff
+# yoskeoka envdiff
 
 ## How do I install these formulae?
 
