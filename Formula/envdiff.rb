@@ -5,43 +5,43 @@
 class Envdiff < Formula
   desc "This tool prints envfile diff"
   homepage "https://github.com/yoskeoka/envdiff"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.3/envdiff_0.1.3_Darwin_arm64"
-      sha256 "58a4c30bc8f17bb9d0d45220da24a6af9972568c14906de10cfd37104bda3d0d"
+    if Hardware::CPU.intel?
+      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.4/envdiff_0.1.4_Darwin_x86_64"
+      sha256 "e488390da73e354c616f84327976f5f44417bbb80dc60569738ad755b420aec8"
 
       def install
-        bin.install "envdiff_0.1.3_Darwin_arm64" => "envdiff"
+        bin.install "envdiff_0.1.4_Darwin_x86_64" => "envdiff"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.3/envdiff_0.1.3_Darwin_x86_64"
-      sha256 "3101cd132c60b3fb40db61252832bff2c1a646e67665e41039c3901ca23d446a"
+    if Hardware::CPU.arm?
+      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.4/envdiff_0.1.4_Darwin_arm64"
+      sha256 "55a05fe45a52deeee9f5f0a067e8c37e468dfbcd5a9561f84ec1363dd43cbe3c"
 
       def install
-        bin.install "envdiff_0.1.3_Darwin_x86_64" => "envdiff"
+        bin.install "envdiff_0.1.4_Darwin_arm64" => "envdiff"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.3/envdiff_0.1.3_Linux_arm64"
-      sha256 "5eade970715b7bd450b44c9b53181fd80cb6a60f7cdf3c983961ac90bed1492d"
+    if Hardware::CPU.intel?
+      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.4/envdiff_0.1.4_Linux_x86_64"
+      sha256 "ceb203356d9bd312ad2f4daf23ce3f1262b7a10495e4f0f530fae12ab44bfb4b"
 
       def install
-        bin.install "envdiff_0.1.3_Linux_arm64" => "envdiff"
+        bin.install "envdiff_0.1.4_Linux_x86_64" => "envdiff"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.3/envdiff_0.1.3_Linux_x86_64"
-      sha256 "ba9edb6f1ee9e759fb649f425532631b606eba38c1e4a0a9b93188058155d507"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.4/envdiff_0.1.4_Linux_arm64"
+      sha256 "5310d488d5cb4e6fc4863925c8fe0ebcbc6b923289d87bf89e4b04c97a411746"
 
       def install
-        bin.install "envdiff_0.1.3_Linux_x86_64" => "envdiff"
+        bin.install "envdiff_0.1.4_Linux_arm64" => "envdiff"
       end
     end
   end
