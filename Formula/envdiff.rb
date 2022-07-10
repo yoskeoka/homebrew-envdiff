@@ -10,7 +10,7 @@ class Envdiff < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.3/envdiff_0.1.3_Darwin_arm64", :using => CurlDownloadStrategy
+      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.3/envdiff_0.1.3_Darwin_arm64"
       sha256 "58a4c30bc8f17bb9d0d45220da24a6af9972568c14906de10cfd37104bda3d0d"
 
       def install
@@ -18,7 +18,7 @@ class Envdiff < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.3/envdiff_0.1.3_Darwin_x86_64", :using => CurlDownloadStrategy
+      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.3/envdiff_0.1.3_Darwin_x86_64"
       sha256 "3101cd132c60b3fb40db61252832bff2c1a646e67665e41039c3901ca23d446a"
 
       def install
@@ -29,7 +29,7 @@ class Envdiff < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.3/envdiff_0.1.3_Linux_arm64", :using => CurlDownloadStrategy
+      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.3/envdiff_0.1.3_Linux_arm64"
       sha256 "5eade970715b7bd450b44c9b53181fd80cb6a60f7cdf3c983961ac90bed1492d"
 
       def install
@@ -37,7 +37,7 @@ class Envdiff < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.3/envdiff_0.1.3_Linux_x86_64", :using => CurlDownloadStrategy
+      url "https://github.com/yoskeoka/envdiff/releases/download/v0.1.3/envdiff_0.1.3_Linux_x86_64"
       sha256 "ba9edb6f1ee9e759fb649f425532631b606eba38c1e4a0a9b93188058155d507"
 
       def install
